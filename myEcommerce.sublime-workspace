@@ -1,0 +1,509 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"the",
+				"thead\tTag"
+			],
+			[
+				"co",
+				"col-6"
+			],
+			[
+				"name",
+				"namespace"
+			],
+			[
+				"re",
+				"redirect〔module〕"
+			],
+			[
+				"prod",
+				"product_id〔variable〕"
+			],
+			[
+				"product",
+				"products"
+			],
+			[
+				"pro",
+				"product_obj〔variable〕"
+			],
+			[
+				"produc",
+				"products"
+			],
+			[
+				"o",
+				"obj"
+			],
+			[
+				"cat",
+				"cart_obj〔variable〕"
+			],
+			[
+				"cart",
+				"cart_obj"
+			],
+			[
+				"usr",
+				"user_obj"
+			],
+			[
+				"Cart",
+				"Cart.objects.new"
+			],
+			[
+				"car",
+				"cart_obj"
+			],
+			[
+				"cart_",
+				"cart_obj〔variable〕"
+			],
+			[
+				"Car",
+				"CartManager"
+			],
+			[
+				"new",
+				"new_or_get"
+			],
+			[
+				"objec",
+				"objects"
+			],
+			[
+				"user",
+				"user_obj〔variable〕"
+			],
+			[
+				"mode",
+				"models"
+			],
+			[
+				"pre",
+				"pre_save_cart_reciever〔function〕"
+			],
+			[
+				"m2",
+				"m2m_changed_cart_reciever〔function〕"
+			],
+			[
+				"m2m",
+				"m2m_changed〔module〕"
+			],
+			[
+				"colo",
+				"background-color\tproperty"
+			],
+			[
+				"end",
+				"endif"
+			],
+			[
+				"u",
+				"url"
+			],
+			[
+				"ac",
+				"action\tAttr"
+			],
+			[
+				"regi",
+				"register.html"
+			],
+			[
+				"fo",
+				"form"
+			],
+			[
+				"wid",
+				"width\tproperty"
+			],
+			[
+				"back",
+				"background-image\tproperty"
+			],
+			[
+				"sa",
+				"static"
+			],
+			[
+				"backgr",
+				"background-color\tproperty"
+			],
+			[
+				"main",
+				"main.css"
+			],
+			[
+				"font",
+				"font-size\tproperty"
+			],
+			[
+				"r",
+				"rgba()\tbackground-color"
+			],
+			[
+				"text",
+				"text-align\tproperty"
+			],
+			[
+				"ur",
+				"urls"
+			],
+			[
+				"m",
+				"myapp"
+			],
+			[
+				"pr",
+				"product_pre_save_reciever〔function〕"
+			],
+			[
+				"un",
+				"unique_slug_generator〔module〕"
+			],
+			[
+				"in",
+				"instance"
+			],
+			[
+				"def",
+				"default"
+			],
+			[
+				"Pro",
+				"Product〔module〕"
+			],
+			[
+				"file",
+				"filename〔argument〕"
+			],
+			[
+				"pass",
+				"password"
+			],
+			[
+				"get",
+				"get_user_model"
+			],
+			[
+				"url",
+				"urlpatterns〔variable〕"
+			],
+			[
+				"contact",
+				"contact_form"
+			],
+			[
+				"con",
+				"contact_form"
+			],
+			[
+				"hom",
+				"home_page"
+			],
+			[
+				"home",
+				"home_pages"
+			],
+			[
+				"w",
+				"width\tproperty"
+			],
+			[
+				"hei",
+				"height\tproperty"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"ter",
+				"Terminal: Open"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"Package Control: Disable Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Install Package Control"
+			],
+			[
+				"vme",
+				"View: Toggle Menu"
+			],
+			[
+				"vmen",
+				"View: Toggle Menu"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 81.0,
+		"history":
+		[
+			"python manage.py runserver",
+			"python",
+			"python manage.py runserver",
+			"cd ~/",
+			"cd..",
+			"cf"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/gaure/Desktop/Animated UI"
+	],
+	"file_history":
+	[
+		"/C/Users/gaure/Desktop/index.html",
+		"/C/Users/gaure/Desktop/Mark/src/myapp/templates/products/snippets/cart-update.html",
+		"/C/Users/gaure/Desktop/Mark/src/templates/base.html",
+		"/C/Users/gaure/Desktop/Mark/src/cart/views.py",
+		"/C/Users/gaure/Desktop/Mark/src/cart/templates/cart/home.html",
+		"/C/Users/gaure/Desktop/Mark/src/static_my_proj/css/main.css",
+		"/C/Users/gaure/Desktop/Mark/src/myapp/templates/products/detail.html",
+		"/C/Users/gaure/Desktop/Mark/src/cart/urls.py",
+		"/C/Users/gaure/Desktop/Mark/src/myapp/templates/products/cart-update.html",
+		"/C/Users/gaure/Desktop/Mark/src/myapp/views.py",
+		"/C/Users/gaure/Desktop/Mark/src/cart/models.py",
+		"/C/Users/gaure/Desktop/Mark/src/myapp/urls.py",
+		"/C/Users/gaure/Desktop/Mark/src/ecommerce/urls.py",
+		"/C/Users/gaure/Desktop/Mark/src/templates/auth/login.html",
+		"/C/Users/gaure/Desktop/Mark/src/cart/admin.py",
+		"/C/Users/gaure/Desktop/Mark/src/myapp/models.py",
+		"/C/Users/gaure/Desktop/Mark/src/search/views.py",
+		"/C/Users/gaure/Desktop/Mark/src/ecommerce/settings.py",
+		"/C/Users/gaure/Desktop/Mark/src/search/templates/search/view.html",
+		"/C/Users/gaure/Desktop/Mark/src/search/urls.py",
+		"/C/Users/gaure/Desktop/Mark/static_cdn/static_root/css/main.css",
+		"/C/Users/gaure/Desktop/Mark/src/myapp/templates/products/list.html",
+		"/C/Users/gaure/Desktop/Mark/src/templates/home_page.html",
+		"/C/Users/gaure/Desktop/Mark/src/templates/auth/register.html",
+		"/C/Users/gaure/Desktop/Mark/src/ecommerce/forms.py",
+		"/C/Users/gaure/Desktop/Mark/src/ecommerce/views.py",
+		"/C/Users/gaure/Desktop/Mark/src/myapp/templates/products/featured-detail.html",
+		"/C/Users/gaure/Desktop/Mark/src/templates/auth/base.html",
+		"/C/Users/gaure/Desktop/Mark/src/myapp/utils.py",
+		"/C/Users/gaure/Desktop/Mark/src/myapp/admin.py",
+		"/F/python/ListAndDetails.py",
+		"/C/Users/gaure/Desktop/Mark/src/myapp/products/list.html",
+		"/F/python/loginRegister.py",
+		"/C/Users/gaure/Desktop/Mark/Lib/site-packages/django/contrib/auth/__init__.py",
+		"/F/python/forms.py",
+		"/C/Users/gaure/Desktop/Mark/Lib/site-packages/django/forms/formsets.py",
+		"/C/Users/gaure/AppData/Roaming/Sublime Text 3/Packages/User/Terminal (Windows).sublime-settings",
+		"/C/Users/gaure/AppData/Roaming/Sublime Text 3/Packages/User/Terminal.sublime-settings",
+		"/C/Users/gaure/AppData/Roaming/Sublime Text 3/Packages/Terminal/Terminal.sublime-settings",
+		"/C/Users/gaure/Desktop/Mark/Lib/site-packages/django/forms/widgets.py",
+		"/C/Users/gaure/Desktop/Mark/src/ecommerce/ecommerce/settings.py",
+		"/C/Users/gaure/Desktop/Mark/src/ecommerce/templates/home_page.html",
+		"/C/Users/gaure/dev/cfehome/src/cfehome/views.py",
+		"/C/Users/gaure/dev/cfehome/src/cfehome/urls.py",
+		"/C/Users/gaure/dev/cfehome/src/manage.py",
+		"/C/Users/gaure/Desktop/python/myEnv/src/project/urls.py",
+		"/C/Users/gaure/Desktop/python/myEnv/src/project/views.py",
+		"/C/Users/gaure/Desktop/python/myEnv/src/myEnv/settings.py",
+		"/C/Users/gaure/Desktop/CrossCheck/script.js",
+		"/C/Users/gaure/Desktop/CrossCheck/index.html",
+		"/C/Users/gaure/Desktop/CrossCheck/style.css",
+		"/C/Users/gaure/Desktop/eCommerce-master/.gitignore"
+	],
+	"find":
+	{
+		"height": 27.0
+	},
+	"find_in_files":
+	{
+		"height": 151.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			" \t",
+			"endifif",
+			"\t<div class=\"container\">",
+			">\n",
+			"Detail",
+			"home_page",
+			">\n"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		},
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 66.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.720875302409,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 115.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "myEcommerce.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 261.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

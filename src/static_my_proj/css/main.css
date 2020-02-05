@@ -1,0 +1,16 @@
+
+.hello{
+	font-size: 55px
+}
+.img{
+	width: 100%
+	
+}
+.green{
+	color: lightblue;
+	background-color: green;
+}
+.removeBtn{
+	float: right;
+    margin-top: -33px;
+}

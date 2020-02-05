@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+      <div class="Conatiner">
+         <img src="{% static 'img/download.jpg' %}" class="img" >
+
+          <div class="row">
+              <div class="col-6 m-auto">
+                   <h1 class="hello">Hello, world!</h1>
+                   {{ title }}
+                  <form method="POST">
+                     {% csrf_token %}
+                        {{ form }}  
+                        <button  type="submit" class="btn btn-success">Submit</button>
+                  </form>
+                  {% if request.user.is_authenticated %}
+                  <div class="row">
+                   <h1>authContent</h1> 
+                   <p class="hello">this is by authenticated</p>
+                  </div>
+                  {% endif %}
+              </div>
+          </div>
+     
+      </div>
+
+{% endblock %}
+
+
