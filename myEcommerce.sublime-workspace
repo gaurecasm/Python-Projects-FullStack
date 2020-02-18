@@ -4,6 +4,142 @@
 		"selected_items":
 		[
 			[
+				"max",
+				"max-width\tproperty"
+			],
+			[
+				"colo",
+				"color: 〔property〕"
+			],
+			[
+				"hre",
+				"href=\"images/2/1.jpeg"
+			],
+			[
+				"gra",
+				"graph.html"
+			],
+			[
+				"btn",
+				"btn-secondary"
+			],
+			[
+				"im",
+				"img\tTag"
+			],
+			[
+				"drop",
+				"dropdownMenuButton"
+			],
+			[
+				"dr",
+				"dropdown-toggle"
+			],
+			[
+				"m",
+				"m-auto"
+			],
+			[
+				"fron",
+				"front.jpg"
+			],
+			[
+				"img",
+				"img-fluid"
+			],
+			[
+				"col",
+				"col-4"
+			],
+			[
+				"row",
+				"row"
+			],
+			[
+				"dj",
+				"dj-logo.png"
+			],
+			[
+				"design",
+				"designs"
+			],
+			[
+				"desin",
+				"designs"
+			],
+			[
+				"desi",
+				"designs"
+			],
+			[
+				"Boo",
+				"Bootstrap4"
+			],
+			[
+				"Css",
+				"CSS3"
+			],
+			[
+				"HTml",
+				"HTML5"
+			],
+			[
+				"Front",
+				"Front-end"
+			],
+			[
+				"margin",
+				"margin-top\tproperty"
+			],
+			[
+				"in",
+				"inline\tlist-style"
+			],
+			[
+				"n",
+				"none\tlist-style"
+			],
+			[
+				"image",
+				"border-image-outset\tproperty"
+			],
+			[
+				"bg",
+				"bgImageMine2"
+			],
+			[
+				"fr",
+				"front.jpg"
+			],
+			[
+				"se",
+				"second"
+			],
+			[
+				"col-lg-",
+				"col-lg-8"
+			],
+			[
+				"text",
+				"text-center"
+			],
+			[
+				"col-xs-",
+				"col-xs-12"
+			],
+			[
+				"col-xs",
+				"col-xs-12"
+			],
+			[
+				"col-sm-",
+				"col-sm-12"
+			],
+			[
+				"nav",
+				"navbar"
+			],
+			[
 				"the",
 				"thead\tTag"
 			],
@@ -96,10 +232,6 @@
 				"m2m_changed〔module〕"
 			],
 			[
-				"colo",
-				"background-color\tproperty"
-			],
-			[
 				"end",
 				"endif"
 			],
@@ -148,16 +280,8 @@
 				"rgba()\tbackground-color"
 			],
 			[
-				"text",
-				"text-align\tproperty"
-			],
-			[
 				"ur",
 				"urls"
-			],
-			[
-				"m",
-				"myapp"
 			],
 			[
 				"pr",
@@ -166,10 +290,6 @@
 			[
 				"un",
 				"unique_slug_generator〔module〕"
-			],
-			[
-				"in",
-				"instance"
 			],
 			[
 				"def",
@@ -223,6 +343,25 @@
 	},
 	"buffers":
 	[
+		{
+			"contents": "from django.db import models\nimport os\nimport random\nfrom .utils import unique_slug_generator\nfrom django.db.models.signals import pre_save,post_save\nfrom django.urls import reverse \n# Create your models here.\n\ndef file_name_ext(filepath):\n\tbase_name = os.path.basename(filepath)\n\tname, ext = os.path.splitext(base_name)\n\treturn name, ext\n\ndef file_modi(instance,filename):\n\tnew_file_name = random.randint(1,45684)\n\tname, ext = file_name_ext(filename)r\n\tfinal_name = \"{new_file_name}{ext}\".format(new_file_name=new_file_name,ext=ext)\n\treturn \"products/{new_file_name}/{final_name}\".format(new_file_name=new_file_name,final_name=final_name)\n\nclass ProductQuerySet(models.query.QuerySet):\n\tdef active(self):\n\t\treturn self.filter(active=True)\n\tdef featured(self):\n\t\treturn self.filter(featured=True,active=True)\n\nclass ProductManager(models.Manager):\n\tdef get_queryset(self):\n\t\treturn ProductQuerySet(self.model,using=self._db)\n\tdef all(self):\n\t\treturn self.get_queryset().active()\n\tdef featured(self):\n\t\treturn self.get_queryset().filter(featured=True)\n\n\tdef get_by_id(self,id):\n\t\tqs = self.get_queryset(),filter(id=id)\n\t\tif qs.count() == 1:\n\t\t\treturn qs.first()\n\t\treturn None\n\nclass Product(models.Model):\n\ttitle = models.CharField(max_length=110)\n\tslug = models.SlugField(blank=True,unique=True)\n\tdescription = models.TextField()\n\tprice = models.DecimalField(decimal_places=2, max_digits=20,default=45.54 )\n\timage = models.ImageField(upload_to=file_modi, null=True, blank=True)\n\tfeatured = models.BooleanField(default=False)\n\tactive = models.BooleanField(default=False)\n\n\tobjects = ProductManager()\n\n\tdef get_absolute_url(self):\n\t\treturn \"/products/{slug}/\".format(slug=self.slug)\n\t\n\tdef __str__(self):\n\t\treturn self.title\n\n\ndef product_pre_save_reciever(sender,instance,*args, **kwargs):\n\tif not instance.slug:\n\t\tinstance.slug = unique_slug_generator(instance)\npre_save.connect(product_pre_save_reciever,sender=Product)\n",
+			"file": "src/myapp/models.py",
+			"file_size": 1981,
+			"file_write_time": 132225538182596551,
+			"settings":
+			{
+				"buffer_size": 1921,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/ecommerce/settings.py",
+			"settings":
+			{
+				"buffer_size": 3455,
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -284,9 +423,11 @@
 	},
 	"console":
 	{
-		"height": 81.0,
+		"height": 247.0,
 		"history":
 		[
+			"cd ..",
+			"cd./",
 			"python manage.py runserver",
 			"python",
 			"python manage.py runserver",
@@ -306,13 +447,26 @@
 	},
 	"expanded_folders":
 	[
-		"/C/Users/gaure/Desktop/Animated UI"
+		"/C/Users/gaure/Desktop/Mark",
+		"/C/Users/gaure/Desktop/Mark/src",
+		"/C/Users/gaure/Desktop/Mark/src/ecommerce",
+		"/C/Users/gaure/Desktop/Mark/src/myapp",
+		"/C/Users/gaure/Desktop/Mark/src/search"
 	],
 	"file_history":
 	[
+		"/C/Users/gaure/Desktop/Animated UI/main.css",
+		"/C/Users/gaure/Desktop/Animated UI/style.css",
+		"/C/Users/gaure/Desktop/Animated UI/static/script.js",
+		"/C/Users/gaure/Desktop/Animated UI/static/master.css",
+		"/C/Users/gaure/Desktop/Animated UI/portfolio.html",
+		"/C/Users/gaure/Desktop/Animated UI/index.html",
+		"/C/Users/gaure/Desktop/Animated UI/graphics.html",
+		"/C/Users/gaure/Desktop/Mark/src/templates/base.html",
+		"/C/Users/gaure/Desktop/Mark/src/ecommerce/views.py",
+		"/F/python/ListAndDetails.py",
 		"/C/Users/gaure/Desktop/index.html",
 		"/C/Users/gaure/Desktop/Mark/src/myapp/templates/products/snippets/cart-update.html",
-		"/C/Users/gaure/Desktop/Mark/src/templates/base.html",
 		"/C/Users/gaure/Desktop/Mark/src/cart/views.py",
 		"/C/Users/gaure/Desktop/Mark/src/cart/templates/cart/home.html",
 		"/C/Users/gaure/Desktop/Mark/src/static_my_proj/css/main.css",
@@ -335,12 +489,10 @@
 		"/C/Users/gaure/Desktop/Mark/src/templates/home_page.html",
 		"/C/Users/gaure/Desktop/Mark/src/templates/auth/register.html",
 		"/C/Users/gaure/Desktop/Mark/src/ecommerce/forms.py",
-		"/C/Users/gaure/Desktop/Mark/src/ecommerce/views.py",
 		"/C/Users/gaure/Desktop/Mark/src/myapp/templates/products/featured-detail.html",
 		"/C/Users/gaure/Desktop/Mark/src/templates/auth/base.html",
 		"/C/Users/gaure/Desktop/Mark/src/myapp/utils.py",
 		"/C/Users/gaure/Desktop/Mark/src/myapp/admin.py",
-		"/F/python/ListAndDetails.py",
 		"/C/Users/gaure/Desktop/Mark/src/myapp/products/list.html",
 		"/F/python/loginRegister.py",
 		"/C/Users/gaure/Desktop/Mark/Lib/site-packages/django/contrib/auth/__init__.py",
@@ -365,7 +517,7 @@
 	],
 	"find":
 	{
-		"height": 27.0
+		"height": 33.0
 	},
 	"find_in_files":
 	{
@@ -379,6 +531,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"para",
+			"fuck",
 			" \t",
 			"endifif",
 			"\t<div class=\"container\">",
@@ -403,19 +557,81 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "src/myapp/models.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1921,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								414,
+								414
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		},
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 1,
+					"file": "src/ecommerce/settings.py",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 3455,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1863,
+								1863
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1560.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 27.0
+		"height": 33.0
 	},
 	"input":
 	{
@@ -441,7 +657,7 @@
 		"cols":
 		[
 			0.0,
-			0.720875302409,
+			0.5,
 			1.0
 		],
 		"rows":
@@ -463,7 +679,7 @@
 	"project": "myEcommerce.sublime-project",
 	"replace":
 	{
-		"height": 50.0
+		"height": 62.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -486,12 +702,12 @@
 	},
 	"select_symbol":
 	{
-		"height": 0.0,
+		"height": 392.0,
 		"last_filter": "",
 		"selected_items":
 		[
 		],
-		"width": 0.0
+		"width": 592.0
 	},
 	"selected_group": 0,
 	"settings":
